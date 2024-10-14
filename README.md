@@ -1,6 +1,6 @@
 # Defold TypeScript Template (minimal - Bun version)
 
-<a href="https://discord.gg/eukcq5m"><img alt="Chat with us!" src="https://img.shields.io/discord/766898804896038942.svg?colorB=7581dc&logo=discord&logoColor=white"></a>
+<a href="https://discord.gg/eukcq5m"><img alt="Chat with us!" src="https://img.shields.io/discord/766898804896038942.svg?colorB=7581dc&logo=discord&logoColor=white"></a> [![CI/CD](https://github.com/thinknathan/tsd-template-bun/actions/workflows/build.yml/badge.svg)](https://github.com/thinknathan/tsd-template-bun/actions/workflows/build.yml) ![GitHub License](https://img.shields.io/github/license/thinknathan/tsd-template-bun)
 
 A dev environment for [Defold](https://defold.com/) that transpiles TypeScript into lua using [TypeScriptToLua](https://github.com/TypeScriptToLua/TypeScriptToLua) 
 and [Bun](https://bun.sh/).
