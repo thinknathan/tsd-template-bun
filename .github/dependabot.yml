@@ -4,9 +4,3 @@ updates:
     directory: '/'
     schedule:
       interval: monthly
-  - package-ecosystem: 'bun'
-    directory: '/'
-    schedule:
-      interval: 'monthly'
-    allow:
-      - dependency-name: '@ts-defold*'
