@@ -10,10 +10,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: 'lts/*'
+          bun-version: 1.x
 
       - name: Set up JDK
         uses: actions/setup-java@v4
@@ -25,10 +24,10 @@ jobs:
         uses: dapetcu21/setup-defold@v3.0.3
 
       - name: Install Dependencies
-        run: npm install
+        run: bun install
 
       - name: Genrate lua w/ ts-defold
-        run: npm run build
+        run: bun run build
 
       - name: Build
         run: 'java -jar $BOB --root ./app --archive --platform js-web --verbose resolve distclean build bundle'

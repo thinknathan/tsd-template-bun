@@ -43,13 +43,13 @@ export function on_message(
 			print(features[i]);
 		}
 
-		print('To get started simply use `npm run` and get going!');
+		print('To get started simply use `bun run` and get going!');
 		msg.post('#', 'usage');
 	} else if (message_id === hash('usage')) {
 		print(
-			'  ✔ Use `npm run dev` to start a watcher that compiles and emits lua and script when you save',
+			'  ✔ Use `bun run dev` to start a watcher that compiles and emits lua and script when you save',
 		);
-		print('  ✔ Use `npm run build` to just compile your ts, sans watcher ');
+		print('  ✔ Use `bun run build` to just compile your ts, sans watcher ');
 
 		print('⌚ Stats!');
 		msg.post('#', 'stats');

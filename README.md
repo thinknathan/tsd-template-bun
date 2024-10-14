@@ -1,4 +1,4 @@
-# Defold TypeScript Template (minimal)
+# Defold TypeScript Template (minimal - Bun version)
 
 <a href="https://discord.gg/eukcq5m"><img alt="Chat with us!" src="https://img.shields.io/discord/766898804896038942.svg?colorB=7581dc&logo=discord&logoColor=white"></a>
 
@@ -7,42 +7,42 @@ A dev environment for [Defold](https://defold.com/) that transpiles TypeScript i
 ## Features
 
 - Full Lua and Defold API type definitions for TypeScript auto-complete and type checking
-- Library of types for Defold extensions via `npm run resolve`
+- Library of types for Defold extensions via `bun run resolve`
 - Eslint config for handling the caveats of TypeScriptToLua and keeping your code correct
 - Handles script, gui_script, and module exports using familiar ES6 export syntax
 - Full BoilerPlate game project ready to transpile and go
-- File watcher via `npm run dev` to transpile on save
+- File watcher via `bun run dev` to transpile on save
 
-_Note that you will need to have [Node.js](https://nodejs.org) installed._
+_Note that you will need to have [Bun](https://bun.sh/) installed._
 
 ## Quick Start
 
-- Use `npm run dev` to start a watcher that compiles and emits lua and script when you save
-- Use `npm run build` to just compile your ts, sans watcher
+- Use `bun run dev` to start a watcher that compiles and emits lua and script when you save
+- Use `bun run build` to just compile your ts, sans watcher
 
 ## Installation
 
 1. Fork this template or use [degit](https://www.npmjs.com/package/degit) to download the template locally
 
 ```bash
-npx degit ts-defold/tsd-template my-game
+npx degit thinknathan/tsd-template-bun my-game
 # or
-git clone https://github.com/ts-defold/tsd-template.git my-game
+git clone https://github.com/thinknathan/tsd-template-bun.git my-game
 ```
 
 2. Initialize
 
 ```bash
 cd my-game
-npm install
+bun install
 ```
 
 3. Generate
 
 ```bash
-npm run build # Transpile the TypeScript files to lua
+bun run build # Transpile the TypeScript files to lua
 # or
-npm run dev # Watch for changes and regenerate files on save
+bun run dev # Watch for changes and regenerate files on save
 ```
 
 4. Code
